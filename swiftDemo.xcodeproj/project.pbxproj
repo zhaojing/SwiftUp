@@ -114,6 +114,8 @@
 		0D15ADF21F972A02005E198E /* swiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				0D15AE231F9746E9005E198E /* Views */,
+				0D15AE221F9746D6005E198E /* Model */,
 				0D15ADF31F972A02005E198E /* AppDelegate.swift */,
 				0D15ADF51F972A02005E198E /* ViewController.swift */,
 				0D15ADF71F972A02005E198E /* Main.storyboard */,
@@ -140,6 +142,20 @@
 				0D15AE151F972A02005E198E /* Info.plist */,
 			);
 			path = swiftDemoUITests;
+			sourceTree = "<group>";
+		};
+		0D15AE221F9746D6005E198E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0D15AE231F9746E9005E198E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		2C09A1DB76123E53708CBDA1 /* Frameworks */ = {
