@@ -1,5 +1,6 @@
 import UIKit
 import Kingfisher
+import Rswift
 
 class UserCell: UITableViewCell {
     
@@ -21,11 +22,11 @@ class UserCell: UITableViewCell {
     func setGender(_ user: User) {
         switch user.gender {
         case 0:
-            gender.image = UIImage(named: "female")
+            gender.image = R.image.female()
         case 1:
-            gender.image = UIImage(named: "male")
+            gender.image = R.image.male()
         default:
-            gender.image = UIImage(named: "gender")
+            gender.image = R.image.gender()
         }
     }
 }
