@@ -78,9 +78,9 @@
                                                     <color key="textColor" red="0.34505695104598999" green="0.34512165188789368" blue="0.34505286812782288" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJP-N9-o9P">
-                                                    <rect key="frame" x="128" y="97.5" width="42" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BJP-N9-o9P">
+                                                    <rect key="frame" x="128" y="103.5" width="31" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.6391444206237793" green="0.63925665616989136" blue="0.63913732767105103" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <color key="highlightedColor" red="0.6391444206237793" green="0.63925665616989136" blue="0.63913732767105103" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </label>
@@ -99,7 +99,6 @@
                                                 <constraint firstItem="zng-tI-3Hx" firstAttribute="top" secondItem="p32-cp-NFS" secondAttribute="bottom" constant="10" id="NA0-F1-W5W"/>
                                                 <constraint firstItem="BJP-N9-o9P" firstAttribute="leading" secondItem="AVH-f4-4fh" secondAttribute="trailing" constant="10" id="NBM-wj-o5R"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="VOk-BZ-tHq" secondAttribute="trailing" id="Nfz-yU-qzd"/>
-                                                <constraint firstItem="BJP-N9-o9P" firstAttribute="bottom" secondItem="AVH-f4-4fh" secondAttribute="bottom" id="RTa-e4-CKu"/>
                                                 <constraint firstItem="WXN-t1-5ME" firstAttribute="leading" secondItem="AVH-f4-4fh" secondAttribute="trailing" constant="10" id="UEh-ae-mia"/>
                                                 <constraint firstItem="VOk-BZ-tHq" firstAttribute="top" secondItem="2Qw-9m-ncE" secondAttribute="top" id="XVE-dB-qGe"/>
                                                 <constraint firstItem="AVH-f4-4fh" firstAttribute="top" secondItem="O6W-LN-MJg" secondAttribute="topMargin" constant="10" id="eEP-zb-xir"/>
@@ -107,6 +106,7 @@
                                                 <constraint firstItem="2Qw-9m-ncE" firstAttribute="leading" secondItem="AVH-f4-4fh" secondAttribute="trailing" constant="10" id="hmS-ct-Ykt"/>
                                                 <constraint firstItem="WXN-t1-5ME" firstAttribute="top" secondItem="p32-cp-NFS" secondAttribute="bottom" constant="10" id="jxn-In-tPo"/>
                                                 <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="BJP-N9-o9P" secondAttribute="trailing" id="r6R-EH-0gX"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="BJP-N9-o9P" secondAttribute="bottom" constant="3" id="vj0-a6-eRy"/>
                                                 <constraint firstItem="zng-tI-3Hx" firstAttribute="leading" secondItem="WXN-t1-5ME" secondAttribute="trailing" constant="5" id="w78-Be-0Yd"/>
                                                 <constraint firstItem="p32-cp-NFS" firstAttribute="top" secondItem="2Qw-9m-ncE" secondAttribute="top" id="wrp-X9-mEf"/>
                                                 <constraint firstItem="2Qw-9m-ncE" firstAttribute="top" secondItem="AVH-f4-4fh" secondAttribute="top" id="zAF-1k-IYo"/>
