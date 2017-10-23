@@ -7,7 +7,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-           requestUser()
+        navigationItem.title = "用户列表"
+        navigationController?.navigationBar.prefersLargeTitles = true
+        requestUser()
     }
     
     func requestUser() {
@@ -21,10 +23,13 @@ class ViewController: UIViewController {
 
 extension ViewController: UITableViewDelegate, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return users.count
     }
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if let reuseName = NSStringFromClass(UserCell.classForCoder()).components(separatedBy: ".").last, let cell = tableView.dequeueReusableCell(withIdentifier: reuseName) as? UserCell {
+            cell.configureUserData(user: users[indexPath.row])
+            return cell
+        }
         return UITableViewCell()
     }
-
 }
