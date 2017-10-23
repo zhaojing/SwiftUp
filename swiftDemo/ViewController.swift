@@ -1,11 +1,21 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
     @IBOutlet weak var tableView: UITableView!
+    var users = [User]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+           requestUser()
+    }
+    
+    func requestUser() {
+        UserHelper().getUsers(success: { (users) in
+            self.users = users
+            self.tableView.reloadData()
+        }, error: { (error) in
+        })
     }
 }
 
