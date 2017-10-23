@@ -65,7 +65,7 @@
                                                         <constraint firstAttribute="height" constant="25" id="ZsY-pD-xtI"/>
                                                     </constraints>
                                                 </imageView>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="WXN-t1-5ME">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="call" translatesAutoresizingMaskIntoConstraints="NO" id="WXN-t1-5ME">
                                                     <rect key="frame" x="128" y="53" width="25" height="25"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="Dzj-T7-SYb"/>
@@ -153,4 +153,7 @@
             <point key="canvasLocation" x="-535" y="56"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="call" width="184" height="147"/>
+    </resources>
 </document>
