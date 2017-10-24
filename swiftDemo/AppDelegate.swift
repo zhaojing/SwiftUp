@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  swiftDemo
+//  SwiftDemo
 //
 //  Created by JingZhao on 18/10/2017.
 //  Copyright © 2017 JingZhao. All rights reserved.
