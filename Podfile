@@ -20,9 +20,4 @@ target 'SwiftDemo' do
     pod 'Nimble', '~> 7.0'
   end
 
-  target 'SwiftDemoUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
 end
