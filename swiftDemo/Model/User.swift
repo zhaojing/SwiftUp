@@ -1,4 +1,4 @@
-struct User {
+struct User: Codable {
     let id: Int
     let name: String
     let activeStatus: Int
@@ -9,4 +9,8 @@ struct User {
     let phone: String
     let image: String
     let address: String
+}
+
+struct Users: Codable {
+    let body: [User]
 }

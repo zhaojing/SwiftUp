@@ -1,10 +1,9 @@
 import Foundation
-import SwiftyJSON
 @testable import SwiftDemo
 
 class MockUserDataSuccessFetcher: NetworkFetcher {
-    override  func get(url: URL, success: @escaping ((JSON) -> Void), error: @escaping ((Error)-> Void)) {
-        let mockData: JSON = ["code": 0, "body":[[
+    override  func get(url: URL, success: @escaping ((Data) -> Void), error: @escaping ((Error)-> Void)) {
+        let mockDic: [String: Any] = ["code": 0, "body":[[
         "id": 0,
         "name": "邱艳",
         "activeStatus": 0,
@@ -27,12 +26,17 @@ class MockUserDataSuccessFetcher: NetworkFetcher {
         "phone": "137254247583",
         "image": "http://dummyimage.com/100x100/f28f79",
         "address": "台湾 澎湖县 西屿乡"]]]
-        success(mockData)
+        do {
+            let mockData = try JSONSerialization.data(withJSONObject: mockDic, options: .prettyPrinted)
+            success(mockData)
+        } catch let error as NSError {
+            print(error)
+        }
     }
 }
 
 class MockUserDataFailFetcher: NetworkFetcher {
-    override func get(url: URL, success: @escaping ((JSON) -> Void), error: @escaping ((Error)-> Void)) {
+    override func get(url: URL, success: @escaping ((Data) -> Void), error: @escaping ((Error)-> Void)) {
         error(NSError(domain: NSUnderlyingErrorKey, code: NSURLErrorUnknown))
     }
 }

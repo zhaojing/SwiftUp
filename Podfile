@@ -6,7 +6,6 @@ target 'SwiftDemo' do
   use_frameworks!
 
   # Pods for SwiftDemo
-  pod 'SwiftyJSON'
   pod 'R.swift', '~> 3.3'
   pod 'SnapKit', '~> 4.0'
   pod 'Kingfisher', '~> 4.1'
